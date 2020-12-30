@@ -4,7 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
+//#include <StoneToolClass/Public/Tool/ScreenMove.h>
+#include "Tool/ScreenMove.h"
 #include "TowerDefencePlayerController.generated.h"
+
 
 /**
  * 
@@ -20,7 +23,11 @@ public:
 
 	virtual void Tick(float DeltaSeconds) override;
 
+	// 设置鼠标模式；例如禁止隐藏，锁定范围
+	void SetInputModeGameAndUI();
+
 protected:
 	virtual void BeginPlay() override;
-	
+
+	FScreenMoveUnits ScreenMoveUnits;
 };
