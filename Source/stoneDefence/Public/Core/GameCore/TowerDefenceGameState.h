@@ -4,13 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameState.h"
-#include "TowerDefneceGameState.generated.h"
+#include "TowerDefenceGameState.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class STONEDEFENCE_API ATowerDefneceGameState : public AGameState
+class STONEDEFENCE_API ATowerDefenceGameState : public AGameState
 {
 	GENERATED_BODY()
 	
