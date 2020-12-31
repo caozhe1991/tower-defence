@@ -96,7 +96,7 @@ bool FScreenMoveUnits::MoveDirection(APlayerController* PlayerController, EScree
 			offsetValue = FVector(ScreenMoveSpeed, ScreenMoveSpeed, 0.f);
 			break;
 		case Screen_RightAndDown: 
-			offsetValue = FVector(ScreenMoveSpeed, -ScreenMoveSpeed, 0.f);
+			offsetValue = FVector(-ScreenMoveSpeed, ScreenMoveSpeed, 0.f);
 			break;
 		case Screen_LeftAndUp: 
 			offsetValue = FVector(ScreenMoveSpeed, -ScreenMoveSpeed, 0.f);
