@@ -26,6 +26,13 @@ public:
 	// 设置鼠标模式；例如禁止隐藏，锁定范围
 	void SetInputModeGameAndUI();
 
+	// 允许玩家自己更新自己的绑定响应 
+	virtual void SetupInputComponent() override;
+
+	// 鼠标滚轮控制
+	void MouseWheelUp();
+	void MouseWheelDown();
+
 protected:
 	virtual void BeginPlay() override;
 

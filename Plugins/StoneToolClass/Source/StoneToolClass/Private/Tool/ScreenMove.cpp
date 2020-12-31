@@ -49,12 +49,12 @@ EScreenMoveState FScreenMoveUnits::CursorMove(const APlayerController* PlayerCon
 		// 在判断上下左右方向
 		if (FMath::IsNearlyEqual(MousePositionY, 0.0f, 5.0f))
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("up"));
+			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("up"));
 			return EScreenMoveState::Screen_Up;
 		}
 		if (FMath::IsNearlyEqual(MousePositionY, SizeY, 5.0f))
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("down"));
+			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("down"));
 			return EScreenMoveState::Screen_Down;
 		}
 		if (FMath::IsNearlyEqual(MousePositionX, 0.0f, 5.0f))

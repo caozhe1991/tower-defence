@@ -13,5 +13,8 @@ UCLASS()
 class STONEDEFENCE_API ATowerDefenceHallPlayerController : public APlayerController
 {
 	GENERATED_BODY()
-	
+
+
+public:
+	ATowerDefenceHallPlayerController();
 };

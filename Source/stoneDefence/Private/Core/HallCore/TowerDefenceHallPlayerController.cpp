@@ -3,3 +3,7 @@
 
 #include "Core/HallCore/TowerDefenceHallPlayerController.h"
 
+ATowerDefenceHallPlayerController::ATowerDefenceHallPlayerController()
+{
+	bShowMouseCursor = true;
+}
