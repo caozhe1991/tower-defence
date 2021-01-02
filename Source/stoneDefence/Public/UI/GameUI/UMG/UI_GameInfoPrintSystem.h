@@ -13,5 +13,13 @@ UCLASS()
 class STONEDEFENCE_API UUI_GameInfoPrintSystem : public UUI_RuleOfTheWidget
 {
 	GENERATED_BODY()
+
+private:
+	UPROPERTY(meta = (BindWidget))
+		class UTextBlock* TDGameLog;
+
+
+public:
+	virtual void NativeConstruct() override;
 	
 };

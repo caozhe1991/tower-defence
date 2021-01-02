@@ -3,3 +3,7 @@
 
 #include "UI/GameUI/UMG/UI_ToolBarSystem.h"
 
+void UUI_ToolBarSystem::NativeConstruct()
+{
+	Super::NativeConstruct();
+}
