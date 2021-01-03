@@ -15,6 +15,7 @@ public class stoneDefence : ModuleRules
 			"InputCore", 
 			"StoneToolClass",
 			"SimpleScreenLoading",
+			"SimpleTutoria",
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });

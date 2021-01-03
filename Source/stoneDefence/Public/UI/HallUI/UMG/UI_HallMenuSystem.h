@@ -16,13 +16,19 @@ class STONEDEFENCE_API UUI_HallMenuSystem : public UUI_RuleOfTheWidget
 	GENERATED_BODY()
 
 private:
+        // 开始游戏
 	UPROPERTY(meta = (BindWidget))
 		UButton* GameStartButton;
+
+        // 秘境
+	UPROPERTY(meta = (BindWidget))
+		UButton* SecretTerritoryButton;
 
 	// 存档
 	UPROPERTY(meta = (BindWidget))
 		UButton* HistoryButton;
 
+        // 设置
 	UPROPERTY(meta = (BindWidget))
 		UButton* GameSettingsButton;
 
@@ -34,9 +40,16 @@ private:
 	UPROPERTY(meta = (BindWidget))
 		UButton* BrowserButton;
 
+        // 更多内容
+	UPROPERTY(meta = (BindWidget))
+		UButton* SpecialContentButton;
+
+	// 退出游戏
 	UPROPERTY(meta = (BindWidget))
 		UButton* QuitGameButton;
 
+	UPROPERTY(EditDefaultsOnly, Category = UI)
+		TSubclassOf<class UUI_SaveAndLoadinGameSystem> ArchivesSystemClass;
 
 public:
 	// 更新UMG的，有点类似 BeginPlay()
@@ -44,14 +57,25 @@ public:
 
 	UFUNCTION()
 	void GameStart();
+
+	UFUNCTION()
+	void SecretTerritory();
+
 	UFUNCTION()
 	void History();
+
 	UFUNCTION()
 	void GameSettings();
+
 	UFUNCTION()
 	void TutorialWebsite();
+
 	UFUNCTION()
 	void Browser();
+
+	UFUNCTION()
+	void SpecialContent();
+
 	UFUNCTION()
 	void QuitGame();
 };

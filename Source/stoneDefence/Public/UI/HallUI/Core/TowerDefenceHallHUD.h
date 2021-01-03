@@ -20,6 +20,8 @@ public:
 
 	virtual void BeginPlay() override;
 
+	UUI_MainHall* GetMainHall();
+
 private:
 	TSubclassOf<UUI_MainHall> MainHallClass;
 	UUI_MainHall* MainHall;

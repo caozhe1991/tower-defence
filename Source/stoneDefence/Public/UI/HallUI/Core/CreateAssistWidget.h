@@ -1,12 +1,9 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+#pragma once
 
-
-#include "UI/HallUI/UMG/UI_MainHall.h"
 #include "Components/SizeBox.h"
 
-/*
 template <class T, class UserObject>
-UserObject* CreateAssistWidget(T *ThisClass, UClass *AssistClass, USizeBox *WidgetArray)
+UserObject* CreateAssistWidget(T* ThisClass, UClass* AssistClass, USizeBox* WidgetArray)
 {
 	UserObject* UserObjectElement = nullptr;
 	//TODO 播放动画，淡入
@@ -32,7 +29,7 @@ UserObject* CreateAssistWidget(T *ThisClass, UClass *AssistClass, USizeBox *Widg
 	UserObjectElement = CreateWidget<UserObject>(ThisClass->GetWord(), AssistClass);
 	if (UserObjectElement)
 	{
-		if(WidgetArray->AddChild(UserObjectElement))
+		if (WidgetArray->AddChild(UserObjectElement))
 		{
 			// 添加成功
 		}
@@ -43,19 +40,4 @@ UserObject* CreateAssistWidget(T *ThisClass, UClass *AssistClass, USizeBox *Widg
 		}
 	}
 	return UserObjectElement;
-}
-*/
-void UUI_MainHall::NativeConstruct()
-{
-	Super::NativeConstruct();
-}
-
-UBorder* UUI_MainHall::GetBorder()
-{
-	return Border;
-}
-
-USizeBox* UUI_MainHall::GetSizeBox()
-{
-	return BoxList;
 }

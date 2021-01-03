@@ -21,3 +21,8 @@ void ATowerDefenceHallHUD::BeginPlay()
 	MainHall = CreateWidget<UUI_MainHall>(GetWorld(), MainHallClass);
 	MainHall->AddToViewport();
 }
+
+UUI_MainHall* ATowerDefenceHallHUD::GetMainHall()
+{
+	return MainHall;
+}
