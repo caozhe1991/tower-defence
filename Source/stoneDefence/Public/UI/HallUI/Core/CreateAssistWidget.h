@@ -3,7 +3,7 @@
 #include "Components/SizeBox.h"
 
 template <class T, class UserObject>
-UserObject* CreateAssistWidget(T* ThisClass, UClass* AssistClass, USizeBox* WidgetArray)
+UserObject* CreateAssistWidget(UWorld* World, UClass* AssistClass, USizeBox* WidgetArray)
 {
 	UserObject* UserObjectElement = nullptr;
 	//TODO ≤•∑≈∂Øª≠£¨µ≠»Î
@@ -26,7 +26,7 @@ UserObject* CreateAssistWidget(T* ThisClass, UClass* AssistClass, USizeBox* Widg
 		}
 	}
 
-	UserObjectElement = CreateWidget<UserObject>(ThisClass->GetWord(), AssistClass);
+	UserObjectElement = CreateWidget<UserObject>(World, AssistClass);
 	if (UserObjectElement)
 	{
 		if (WidgetArray->AddChild(UserObjectElement))

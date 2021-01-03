@@ -7,6 +7,7 @@
 #include "UI/Common/UMG/UI_SaveAndLoadinGameSystem.h"
 #include "UI/HallUI/Core/CreateAssistWidget.h"
 #include "UI/HallUI/Core/TowerDefenceHallHUD.h"
+#include "UI/HallUI/UMG/UI_MainHall.h"
 
 void UUI_HallMenuSystem::NativeConstruct()
 {
@@ -31,11 +32,11 @@ void UUI_HallMenuSystem::SecretTerritory() {
 
 void UUI_HallMenuSystem::History()
 {
+	GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Red, "[click] UUI_HallMenuSystem::History");
 	ATowerDefenceHallHUD* hud = Cast<ATowerDefenceHallHUD>(UGameplayStatics::GetPlayerController(this, 0)->GetHUD());
-
 	UUI_MainHall* aa = hud->GetMainHall();
 	
-	CreateAssistWidget<UUI_HallMenuSystem, UUI_SaveAndLoadinGameSystem>(this, ArchivesSystemClass, )
+	//CreateAssistWidget<UUI_HallMenuSystem, UUI_SaveAndLoadinGameSystem>(this->GetWorld(), ArchivesSystemClass, aa->GetSizeBox());
 }
 
 void UUI_HallMenuSystem::GameSettings()

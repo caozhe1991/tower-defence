@@ -17,7 +17,7 @@ class STONEDEFENCE_API UUI_MainHall : public UUI_RuleOfTheWidget
 private:
 
 	UPROPERTY(meta = (BindWidget))
-		class  UBorder* Border;
+		class  UBorder* MainBorder;
 
 	UPROPERTY(meta = (BindWidget))
 		class USizeBox* BoxList;

@@ -52,7 +52,7 @@ void UUI_MainHall::NativeConstruct()
 
 UBorder* UUI_MainHall::GetBorder()
 {
-	return Border;
+	return MainBorder;
 }
 
 USizeBox* UUI_MainHall::GetSizeBox()
